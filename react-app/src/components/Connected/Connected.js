@@ -1,11 +1,12 @@
-import { useState } from "react"
 import './Connected.css'
+import {useSelector} from 'react-redux'
 
 export default function Connected() {
-    const [isConnected, changeStatus] = useState(false)
+    const isLogin = useSelector(state => state.isLogged)
+
     return (
         <div id="connected-section">
-            {isConnected ? (
+            {isLogin ? (
                 <div className="connected con-small">
                     <div className="con-header green"><p>Device is connected</p></div>
                     <div className="code-block"><button className="red-btn">Disconnect</button></div>
