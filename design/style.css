@@ -120,6 +120,14 @@ button:focus { outline: none; }
     height: 100px;
 }
 
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #1d4354;
+    display: block;
+    color: blanchedalmond
+}
+
 @media(max-width: 1200px) {}
 @media(max-width: 650px) {
     .username { display: none;}
