@@ -20,7 +20,7 @@
     margin: 20px 20px;
 }
 
-#onetime-code {
+#onetime-code, #delivery-name {
     height: 27px;
     border: 1px solid #5d5d5d94;
     border-radius: 5px;
@@ -30,9 +30,22 @@
     width: 300px;
 }
 
-#onetime-code:focus { outline: none; }
+#onetime-code:focus, #delivery-name:focus, #delivery-type:focus { outline: none; }
 
 .con-small {
     width: 300px;
     height: 100px;
+}
+
+@media(max-width: 650px) {
+    #onetime-code, #delivery-name {width: 150px;}
+    #delivery-type, #onetime-code {width: 240px;}
+    #onetime-code {margin-bottom: 10px;}
+    #delivery-name {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    .connected {width: 300px;}
+    .code-block { height: max-content;}
 }

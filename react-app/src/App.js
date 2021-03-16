@@ -1,6 +1,7 @@
 import './App.css';
 import Connected from './components/Connected/Connected';
 import Header from './components/Header/Header';
+import NewDelivery from './components/NewDelivery/NewDelivery';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <main>
         <Header />
         <Connected />
+        <NewDelivery />
       </main>
     </div>
   );
