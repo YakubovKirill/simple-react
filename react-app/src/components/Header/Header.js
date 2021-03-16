@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from 'react-redux'
 import { signIn } from '../../redux/actions'
 
 export default function Header() {
-    const isLogin = useSelector(state => state.isLogged)
     return (
         <header>
             <div className="container f-c">
@@ -18,6 +17,7 @@ export default function Header() {
 function UserInfo(props) {
     const isLogin = useSelector(state => state.isLogged)
     const dispatch = useDispatch()
+    
     return (
         <div className="container f-c">
             {isLogin ? 
