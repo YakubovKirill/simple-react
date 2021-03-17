@@ -1,0 +1,27 @@
+#deliveries-list {
+    width: 100%;
+    height: max-content;
+}
+
+.table-header {
+    height: 30px;
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    min-width: max-content;
+    width: 130px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media(max-width: 650px) {
+    table button, table td { font-size: 14px; }
+}
+
+@media(max-width: 500px) {
+    table button { padding: 8px 10px;  }
+}

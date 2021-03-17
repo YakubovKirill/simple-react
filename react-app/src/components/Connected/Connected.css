@@ -40,12 +40,19 @@
 @media(max-width: 650px) {
     #onetime-code, #delivery-name {width: 150px;}
     #delivery-type, #onetime-code {width: 240px;}
-    #onetime-code {margin-bottom: 10px;}
+    #onetime-code {
+        margin: 10px 0px;
+        width: 200px;
+    }
     #delivery-name {
         margin-right: 0;
         margin-bottom: 10px;
         width: 250px;
     }
-    .connected {width: 300px;}
+    .connected {width: 400px;}
     .code-block { height: max-content;}
+}
+
+@media(max-width: 500px) {
+    .connected {width: 280px;}
 }
