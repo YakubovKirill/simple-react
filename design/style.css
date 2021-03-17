@@ -8,6 +8,10 @@
     transition: all ease-in-out 0.2s;
 }
 
+#user-info-block {
+    display: none;
+}
+
 html, body, main {
     min-width: 300px;
 }
