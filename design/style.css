@@ -149,12 +149,36 @@ footer {
     color: blanchedalmond
 }
 
+
+#deliveries-list {
+    width: 100%;
+    height: max-content;
+}
+
+.table-header {
+    height: 30px;
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    min-width: max-content;
+    width: 130px;
+    text-align: center;
+    overflow: hidden;
+}
+
 @media(max-width: 1200px) {}
 @media(max-width: 650px) {
     .username { display: none;}
     #onetime-code, #delivery-name {width: 150px;}
     #delivery-type, #onetime-code {width: 240px;}
-    #onetime-code {margin-bottom: 10px;}
+    #onetime-code {
+        margin: 10px 0px;
+        width: 200px;
+    }
     #delivery-name {
         margin-right: 0;
         margin-bottom: 10px;
@@ -164,12 +188,15 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-    .connected {width: 300px;}
+    .connected {width: 400px;}
     .code-block { height: max-content;}
+    table button, table td { font-size: 14px; }
 }
 
 @media(max-width: 500px) {
     .company-name { display: none;}
+    .connected {width: 280px;}
+    table button { padding: 8px 10px;  }
 }
 
 @media(max-width: 768px) {
