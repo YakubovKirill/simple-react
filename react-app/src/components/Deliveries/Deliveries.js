@@ -1,5 +1,4 @@
 import './Deliveries.css'
-import {useState} from 'react'
 
 export default function Deliveries() {
     // This variable store items from database. Thus data is test data
